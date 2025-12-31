@@ -42,9 +42,11 @@ Replace it with your Minecraft mods folder path.
 
 Examples:
 
-MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\.minecraft\mods"
-MODS_FOLDER = r"C:\Users\Alex\Documents\CurseForge\Minecraft\Instances\MyModpack\mods"
-MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\PrismLauncher\instances\Fabric 1.21\mods"
+`MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\.minecraft\mods"`
+
+`MODS_FOLDER = r"C:\Users\Alex\Documents\CurseForge\Minecraft\Instances\MyModpack\mods"`
+
+`MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\PrismLauncher\instances\Fabric 1.21\mods"`
 
 Save the file.
 
@@ -63,7 +65,9 @@ Then click on the top and copy and paste it into the python file.
 Step 3: Open terminal in the project folder
 
 Open the folder with script.py.
+
 Hold Shift and right-click.
+
 Click "Open in Terminal" or "Open Command Prompt here".
 
 -------------------------------------------------
