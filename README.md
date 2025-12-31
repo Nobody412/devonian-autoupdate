@@ -55,7 +55,7 @@ If requirements.txt does not exist:
 
 `pip install pyinstaller`
 
-`pyinstaller --onefile script.py`
+`python -m PyInstaller --onefile script.py`
 
 Step 5: Locate the Build Output
 
