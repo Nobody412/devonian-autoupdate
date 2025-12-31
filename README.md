@@ -17,12 +17,12 @@ Internet connection (for installing dependencies)
 
 Step 1:
 
-Download or clone the repository
+Download the script.py file
 
 Step 2:
 
 To make this program work, you must tell it where your Minecraft folder is located on your computer.
-In the code, you will see this line:
+In the code (you can open in notepad), you will see this line:
 
 `MODS_FOLDER = r"minecraft folder path here"`
 
@@ -39,13 +39,11 @@ Examples of path:
 
 Step 3:
 
-Open a terminal inside the project folder
+right click anywhere in folder and `click open in terminal`
 
 Step 4: 
 
 paste each of these 
-
-`cd path\to\your\project`
 
 `pip install -r requirements.txt`
 
