@@ -9,12 +9,6 @@ Before building, make sure you have:
 
 Python 3.10 or newer
 
-pip (comes with Python)
-
-Windows / Linux / macOS
-
-Internet connection (for installing dependencies)
-
 Step 1:
 
 Download the script.py file
