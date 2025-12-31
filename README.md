@@ -1,58 +1,82 @@
-This program auto updates devonian to latest actions with one single click 
+What this program does:
+This program updates the Devonian mod to the latest version with one click.
 
+--------------------------------------------------
 
+Python setup:
 
-
-How to build:
-
-Before building, make sure you have:
-
+You need:
 Python 3.10 or newer
+Internet connection
+Windows, macOS, or Linux
 
-Step 1:
+Check Python:
+Open Command Prompt or Terminal
+Type:
+python --version
 
-Download the script.py file
+If it says 3.10 or higher, you are good.
+If not, download Python from below or the Microsoft store.
+https://www.python.org/downloads/
 
-Step 2:
+Windows only:
+When installing Python, make sure "Add Python to PATH" is checked.
 
-To make this program work, you must tell it where your Minecraft folder is located on your computer.
-In the code (you can open in notepad), you will see this line:
+--------------------------------------------------
 
-`MODS_FOLDER = r"minecraft folder path here"`
+Step 1: Download the program
 
-You need to replace the text inside the quotes with the full path to your Minecraft mods folder.
+Download or clone the repository.
+Extract the folder somewhere easy, like the Desktop.
 
-Examples of path: 
+--------------------------------------------------
 
-`MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\.minecraft\mods"`
+Step 2: Set Minecraft mods folder (Python part)
 
-`MODS_FOLDER = r"C:\Users\Alex\Documents\CurseForge\Minecraft\Instances\MyModpack\mods"`
+Open script.py in Notepad or any text editor.
 
-`MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\PrismLauncher\instances\Fabric 1.21\mods"`
+Find this line:
+MODS_FOLDER = r"minecraft folder path here"
 
+Replace it with your Minecraft mods folder path.
 
-Step 3:
+Examples:
 
-right click anywhere in folder and `click open in terminal`
+MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\.minecraft\mods"
+MODS_FOLDER = r"C:\Users\Alex\Documents\CurseForge\Minecraft\Instances\MyModpack\mods"
+MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\PrismLauncher\instances\Fabric 1.21\mods"
 
-Step 4: 
+Save the file.
 
-paste each of these 
+--------------------------------------------------
 
-`pip install -r requirements.txt`
+How to get your folder path
+WIN + R
+%appdata%
+If using Prism Launcher open up the folder called PrismLauncher, click on instances and select the instance
 
-If requirements.txt does not exist:
+If using Modrinth Loader open the folder called ModrinthApp, Open profiles and select the profile.
 
-`pip install requests pyinstaller`
+Then click on the top and copy and paste it into the python file.
+--------------------------------------------------
 
-`pip install pyinstaller`
+Step 3: Open terminal in the project folder
 
-`python -m PyInstaller --onefile script.py`
+Open the folder with script.py.
+Hold Shift and right-click.
+Click "Open in Terminal" or "Open Command Prompt here".
 
-Step 5: Locate the Build Output
+-------------------------------------------------
 
-After the build completes, you will see new folders, your executable will be inside the dist folder.
+Step 4: Install required packages
 
-Step 6:
+If requirements.txt exists:
+pip install -r requirements.txt
 
-double click to run
+If it does not exist:
+pip install requests pyinstaller
+
+--------------------------------------------------
+
+Step 5: Run the Python file.
+If it automatically closes you should be fine.
