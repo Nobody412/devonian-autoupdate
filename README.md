@@ -80,7 +80,7 @@ now add your python path and script path (the folder of script and
 
 the end result will look like this 
 
-"C:\Users\Alex\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe" "E:\script.py"
+`"C:\Users\Alex\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe" "E:\script.py"`
 
 --------------------------------------------------
 
