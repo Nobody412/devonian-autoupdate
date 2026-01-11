@@ -12,22 +12,18 @@ Windows, macOS, or Linux
 
 Check Python:
 Open Command Prompt or Terminal
-Type:
-python --version
 
 If it says 3.10 or higher, you are good.
 If not, download Python from below or the Microsoft store.
 https://www.python.org/downloads/
 
-Windows only:
 When installing Python, make sure "Add Python to PATH" is checked.
 
 --------------------------------------------------
 
 Step 1: Download the program
 
-Download or clone the repository.
-Extract the folder somewhere easy, like the Desktop.
+Download the script
 
 --------------------------------------------------
 
@@ -40,26 +36,12 @@ MODS_FOLDER = r"minecraft folder path here"
 
 Replace it with your Minecraft mods folder path.
 
-Examples:
-
-`MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\.minecraft\mods"`
-
-`MODS_FOLDER = r"C:\Users\Alex\Documents\CurseForge\Minecraft\Instances\MyModpack\mods"`
+Example:
 
 `MODS_FOLDER = r"C:\Users\Alex\AppData\Roaming\PrismLauncher\instances\Fabric 1.21\mods"`
 
 Save the file.
 
---------------------------------------------------
-
-How to get your folder path
-WIN + R
-%appdata%
-If using Prism Launcher open up the folder called PrismLauncher, click on instances and select the instance
-
-If using Modrinth Loader open the folder called ModrinthApp, Open profiles and select the profile.
-
-Then click on the top and copy and paste it into the python file.
 --------------------------------------------------
 
 Step 3: Open terminal in the project folder
@@ -74,13 +56,39 @@ Click "Open in Terminal" or "Open Command Prompt here".
 
 Step 4: Install required packages
 
-If requirements.txt exists:
-pip install -r requirements.txt
-
-If it does not exist:
-pip install requests pyinstaller
+run `pip install requests pyinstaller` in terminal 
 
 --------------------------------------------------
 
-Step 5: Run the Python file.
-If it automatically closes you should be fine.
+Step 5: get python.exe path
+
+run `python -c "import sys; print(sys.executable)"` in terminal and copy the path
+
+--------------------------------------------------
+
+Step 6: Set path in prism 
+
+open prism launcher
+
+select instance and click on edit 
+
+then go to settings and click on custom commands
+
+write `"add python path here" "add script path here"` under "pre launch command"
+
+now add your python path and script path (the folder of script and
+
+the end result will look like this 
+
+"C:\Users\Alex\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\python.exe" "E:\script.py"
+
+--------------------------------------------------
+
+Now whenever you run minecraft, devonian will auto update to latest actions in github 
+
+
+
+
+
+
+
